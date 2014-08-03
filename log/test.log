@@ -1,0 +1,27 @@
+  [1m[36mPlate Load (0.1ms)[0m  [1mSELECT  "plates".* FROM "plates"   ORDER BY "plates"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "plates" ("created_at", "id", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-08-03 21:40:49.949916"], ["id", 0], ["updated_at", "2014-08-03 21:40:49.949916"]]
+  [1m[35m (3.4ms)[0m  commit transaction
+  [1m[36mPlate Load (0.1ms)[0m  [1mSELECT  "plates".* FROM "plates"   ORDER BY "plates"."id" ASC LIMIT 1[0m
+Processing by PlatesController#show as HTML
+  Rendered plates/show.html.slim within layouts/application (93.4ms)
+Completed 200 OK in 187ms (Views: 186.3ms | ActiveRecord: 0.0ms)
+Processing by PlatesController#new as HTML
+Completed 200 OK in 2ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+Processing by PlatesController#create as HTML
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+Processing by PlatesController#index as HTML
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+Processing by PlatesController#destroy as HTML
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+Processing by PlatesController#show as HTML
+  Rendered plates/show.html.slim within layouts/application (27.8ms)
+Completed 200 OK in 57ms (Views: 56.7ms)
+Processing by PlatesController#new as HTML
+Completed 200 OK in 2ms (Views: 2.0ms)
+Processing by PlatesController#create as HTML
+Completed 200 OK in 2ms (Views: 1.7ms)
+Processing by PlatesController#index as HTML
+Completed 200 OK in 2ms (Views: 1.7ms)
+Processing by PlatesController#destroy as HTML
+Completed 200 OK in 2ms (Views: 1.9ms)

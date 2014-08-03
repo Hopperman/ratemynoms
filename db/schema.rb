@@ -11,6 +11,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20140803212013) do
+
+  create_table "helpings", force: true do |t|
+    t.string   "name"
+    t.string   "nutrient"
+    t.decimal  "rating"
+    t.integer  "plate_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "helpings", ["plate_id"], name: "index_helpings_on_plate_id"
+
+  create_table "plates", force: true do |t|
+    t.decimal  "rating"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end
